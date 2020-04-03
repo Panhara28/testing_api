@@ -4668,11 +4668,8 @@ Index.getInitialProps = function _callee() {
 
         case 2:
           res = _context.sent;
-          _context.next = 5;
-          return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.awrap(res.json());
+          data = JSON.parse(res); // const data = await res.json();
 
-        case 5:
-          data = _context.sent;
           console.log("Show data fetched. Count: ".concat(data)); // return {
           //   shows: data.map(entry => entry.show)
           // };
@@ -4681,7 +4678,7 @@ Index.getInitialProps = function _callee() {
             data: data
           });
 
-        case 8:
+        case 6:
         case "end":
           return _context.stop();
       }

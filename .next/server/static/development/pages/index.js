@@ -1920,7 +1920,8 @@ const Index = props => {
 
 Index.getInitialProps = async function () {
   const res = await isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_3___default()('http://salatraju.org/api/');
-  const data = await res.json();
+  const data = JSON.parse(res); // const data = await res.json();
+
   console.log(`Show data fetched. Count: ${data}`); // return {
   //   shows: data.map(entry => entry.show)
   // };

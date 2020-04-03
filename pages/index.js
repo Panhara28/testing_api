@@ -21,8 +21,9 @@ const Index = props => {
 
 Index.getInitialProps = async function() {
   const res = await fetch('http://salatraju.org/api/');
-  const data = await res.json();
-
+  const data = JSON.parse(res);
+  // const data = await res.json();
+  
   console.log(`Show data fetched. Count: ${data}`);
 
   // return {
