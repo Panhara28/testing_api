@@ -23,7 +23,7 @@ Index.getInitialProps = async function() {
   const res = await fetch('http://salatraju.org/api/');
   const data = await res.json();
 
-  console.log(`Show data fetched. Count: ${data.length}`);
+  console.log(`Show data fetched. Count: ${data}`);
 
   // return {
   //   shows: data.map(entry => entry.show)

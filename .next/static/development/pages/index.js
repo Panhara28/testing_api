@@ -4673,7 +4673,7 @@ Index.getInitialProps = function _callee() {
 
         case 5:
           data = _context.sent;
-          console.log("Show data fetched. Count: ".concat(data.length)); // return {
+          console.log("Show data fetched. Count: ".concat(data)); // return {
           //   shows: data.map(entry => entry.show)
           // };
 
